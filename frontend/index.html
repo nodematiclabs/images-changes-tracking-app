@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changes Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Image Changes Tracking</h1>
+    <h2 id="subtitle"></h2>
+    <div class="controls">
+        <button id="previousImage">Previous Image</button>
+        <button id="nextImage">Next Image</button>
+        <button id="deleteLatest">Delete Latest</button>
+    </div>
+    <div class="canvas-container">
+        <canvas id="resultCanvas1"></canvas>
+        <canvas id="resultCanvas2"></canvas>
+    </div>
+    <script async src="https://docs.opencv.org/master/opencv.js" onload="imageComparator.init();" type="text/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>
